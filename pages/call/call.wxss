@@ -1,0 +1,4 @@
+/* call.wxss */
+.call{
+  top: 390rpx;
+}

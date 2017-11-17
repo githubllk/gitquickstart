@@ -1,0 +1,103 @@
+/* mcenter.wxss */
+.userinfo {
+  display: flex;
+  height: 270rpx;
+}
+.userinfo-left {
+	display: flex;
+	flex-direction: column;
+	padding: 15rpx 0;
+	align-items: center;
+	background: #ccff99;
+  width: 40%;
+}
+.userinfo-right{
+  width: 60%;
+  background: #006633;
+  color: #fff;
+  font-family: '微软雅黑';
+	text-align: left;
+  font-size: 36rpx;
+  padding-top: 70rpx;
+  /* line-height: 270rpx; */
+  font-weight: bold;
+  /* flex-direction: column; */
+}
+.member-collect{
+   display: flex;
+   justify-content: space-around;
+   height: 110rpx;
+   font-size: 28rpx; 
+   text-align: center;
+   color: #fff;
+}
+.classname{
+  padding-top: 10rpx;
+  /* line-height: 50rpx; */
+}
+.mt5{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 25rpx;
+  height: 80rpx;
+  color: #999999;
+}
+.mt5 image{
+  padding-top: 10rpx;
+  height: 45rpx;
+  width: 45rpx;
+}
+.userinfo-avatar {
+	width: 128rpx;
+	height: 128rpx;
+	margin: 20rpx;
+	border-radius: 50%;
+}
+
+/* .userinfo-nickname {
+	color: #fff;
+} */
+
+.badge {
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	background: #ff0000;
+	color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 8px;
+}
+
+.logout {
+	position: relative;
+	margin-top: 1.17647059em;
+	line-height: 1.41176471;
+	font-size: 17px;
+	padding: 10px 15px;
+	background: #fff;
+	text-align: center;
+}
+
+.logout:before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 1px;
+	border-top: 1rpx solid #D9D9D9;
+	color: #D9D9D9;
+}
+
+.logout:after {
+	content: " ";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 1px;
+	border-bottom: 1rpx solid #D9D9D9;
+	color: #D9D9D9;
+}

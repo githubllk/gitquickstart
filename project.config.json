@@ -1,0 +1,177 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.4",
+	"appid": "wx15d91535024c380d",
+	"projectname": "demo",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "mall",
+					"pathName": "pages/mall/mall",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": 1,
+					"name": "deile",
+					"pathName": "pages/goods/deile/deile",
+					"query": "goods_id=1337",
+					"scene": "1005"
+				},
+				{
+					"id": 2,
+					"name": "cart",
+					"pathName": "pages/cart/cart",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "addresslist",
+					"pathName": "pages/address/list/index",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "order",
+					"pathName": "pages/order/confirm/confirm",
+					"query": "addr_id=122&order_id=1219",
+					"scene": "1005"
+				},
+				{
+					"id": 6,
+					"name": "mcenter",
+					"pathName": "pages/mcenter/member/mcenter",
+					"query": "",
+					"scene": "1005"
+				},
+				{
+					"id": 7,
+					"name": "article",
+					"pathName": "pages/article/article",
+					"query": "article_id=40"
+				},
+				{
+					"id": 8,
+					"name": "search",
+					"pathName": "pages/search/index",
+					"query": "",
+					"scene": "1005"
+				},
+				{
+					"id": 9,
+					"name": "dingdan",
+					"pathName": "pages/order/list/index",
+					"query": "type=goods",
+					"scene": "1005"
+				},
+				{
+					"id": 10,
+					"name": "order_detail",
+					"pathName": "pages/order/detail/index",
+					"query": "order_id=1279",
+					"scene": "1005"
+				},
+				{
+					"id": -1,
+					"name": "order_list",
+					"pathName": "pages/order/list/index",
+					"query": "order_id=1279",
+					"scene": "1005"
+				},
+				{
+					"id": 12,
+					"name": "aconfirm",
+					"pathName": "pages/order/aconfirm/confirm",
+					"query": "order_id=1283",
+					"scene": "1005"
+				},
+				{
+					"id": -1,
+					"name": "address/add/",
+					"pathName": "pages/address/add/index",
+					"query": "",
+					"scene": "1005"
+				},
+				{
+					"id": -1,
+					"name": "address/list",
+					"pathName": "pages/address/confirm/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "web",
+					"pathName": "pages/web/index",
+					"query": ""
+				},
+				{
+					"id": 16,
+					"name": "distribution",
+					"pathName": "pages/distribution/distribution/index",
+					"query": "",
+					"scene": "1005"
+				},
+				{
+					"id": -1,
+					"name": "distribution/profit/",
+					"pathName": "pages/distribution/profit/index",
+					"query": "",
+					"scene": "1005"
+				},
+				{
+					"id": 18,
+					"name": "distribution/subordinate",
+					"pathName": "pages/distribution/subordinate/index",
+					"query": "",
+					"scene": "1005"
+				},
+				{
+					"id": -1,
+					"name": "distribution/superior",
+					"pathName": "pages/distribution/superior/index",
+					"query": "",
+					"scene": "1005"
+				},
+				{
+					"id": 20,
+					"name": "mcenter_information",
+					"pathName": "pages/mcenter/information/index",
+					"query": "",
+					"scene": "1005"
+				},
+				{
+					"id": -1,
+					"name": "face",
+					"pathName": "pages/mcenter/face/index",
+					"query": "",
+					"scene": "1005"
+				}
+			]
+		}
+	}
+}

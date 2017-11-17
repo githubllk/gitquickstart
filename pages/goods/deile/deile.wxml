@@ -1,0 +1,60 @@
+<view class="container" hidden="{{is_def}}">
+  <view class="swiper-container">
+    <swiper class="swiper-box" indicator-dots="{{ indicatorDots }}" vertical="{{ vertical }}" autoplay="{{ autoplay }}" interval="{{ interval }}" duration="{{ duration }}" bindchange="swiperchange">
+      <block wx:for="{{ images}}" wx:key="">
+        <swiper-item>
+          <image src="{{ item.photo }}" class="slide-image" data-index="{{ index }}" bindtap="previewImage" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="shopping-container">
+    <view class="name">{{goods.title}}</view>
+    <view class="price">¥ {{goods.mall_price / 100}}（{{goods.guige}}）</view>
+    <text class="remark">
+        原价:{{goods.price/100}}月售：{{goods.sold_num}}笔 库存：{{goods.num}} {{goods.guige}} 浏览量：{{goods.views}}
+        <!-- {{goods.intro}} -->
+        </text>
+  </view>
+  <view class='blank-10'></view>
+  <view class='blank-10'></view>
+  <view class="item-tips">
+    <view wx:if="{{goods.is_vs1 != 0}}">
+      <icon type='success' size='13' color='#FC601A' />认证商家</view>
+    <view class="text-b" wx:if="{{goods.is_vs2 != 0}}">
+      <icon type='success' size='13' color='#FC601A' />正品保证</view>
+    <view class="text-b" wx:if="{{goods.is_vs3 != 0}}">
+      <icon type='success' size='13' color='#FC601A' />假一赔十</view>
+    <view class="text-b" wx:if="{{goods.is_vs4 != 0}}">
+      <icon type='success' size='13' color='#FC601A' />当日送达</view>
+    <view class="text-b" wx:if="{{goods.is_vs5 != 0}}">
+      <icon type='success' size='13' color='#FC601A' />货到付款</view>
+    <view class="text-b" wx:if="{{goods.is_vs6 != 0}}">
+      <icon type='success' size='13' color='#FC601A' />免运费</view>
+  </view>
+  <view class='blank-10'></view>
+  <view>
+    购买须知
+  </view>
+  <view class='blank-10'></view>
+  <view class='intro__bd'>
+    <text space='true' decode='true'>
+{{goods.instructions}}
+</text>
+  </view>
+  <view class='blank-10'></view>
+  <view>
+    商品介绍
+  </view>
+  <view class='blank-10'></view>
+  <view>
+    <text space='true' decode='true'>
+{{goods.details}}
+</text>
+  </view>
+  <view style='height :200rpx;'></view>
+  <view class="btn-plus" bindtap="addCart">
+    <image class="icon" src="../../../assets/images/iconfont-plus-circle.png" />
+    <text>加入购物车</text>
+  </view>
+</view>

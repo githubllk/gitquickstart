@@ -1,0 +1,47 @@
+page{
+  background-color: #fff;
+}
+.scroll-list {
+    overflow: hidden;
+}
+
+.topbar {
+    margin-top: 0;
+    background: #fff;
+}
+
+.topbar-item {
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.topbar-item.active {
+    color: #479de6;
+}
+
+.swiper_box {
+    width: 100%;
+}
+.line{
+  /* height: 100%; */
+}
+.line-o{
+  height: 57rpx;
+  line-height: 57rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 35rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.line-c{
+     /* height: 150rpx;    */
+   padding: 20rpx; 
+}
+.small-t{
+  font-size: 30rpx;
+  color: #999;
+}
+.t-red{
+  color: red;
+}

@@ -1,0 +1,27 @@
+<!--pages/distribution/profit/index.wxml-->
+<import src="../../common/nav1.wxml" />
+<import src="../../common/prompt.wxml" />
+<template is="nav" data="{{ navList, activeIndex }}" />
+<template is="prompt" data="{{ prompt }}" />
+<view class='line' wx:for="{{list}}" wx:key="">
+  <view class='line-o'>
+    <view>编号：{{item.log_id}}</view>
+    <view>分成时间：{{item.create_time}}</view>
+  </view>
+  <view class='line-c'>
+    <view>
+      分成类型：<text wx:if="{{item.order_type == 0}}">团购</text>
+      <text wx:elif="{{item.order_type == 1}}">商城</text>
+      <text wx:elif="{{item.order_type == 2}}">优惠买单</text>
+    </view>
+    <view class='small-t'>
+      收益金额：
+      <text class='t-red'>￥{{item.money/100}}</text>
+      商城订单：
+      <text class='t-red'>{{item.order_id}}</text>
+    </view>
+  </view>
+  <view class='blank-10'></view>
+  <view class='blank-10'></view>
+</view>
+ <view class='weui-loadmore' style='height:10rpx;'>{{tipText}}</view>

@@ -1,0 +1,19 @@
+<!-- <import src="../common/prompt.wxml"/> -->
+<template name="list">
+	<view class="scroll-list" > 
+    <view class="index_pro" wx:for="{{ pro }}" wx:key=""  >
+       <image src="{{ item.photo }}"bindtap='navigateTo1' data-goods_id="{{item.goods_id}}" />
+      <view class="goods_name">{{ item.title}}</view>
+      <view class="price-icon">
+        <view class="price-c">
+          <view class="price">￥{{ item.price}}</view>
+          <view class="price-shop">￥{{ item.mall_price}}</view>
+        </view>
+        <view class="btns-i" bindtap='addCart' data-id="{{item.goods_id}}">
+         <image class="btns" src="../../assets/images/goods_fill1.png" style="height: 60rpx;width: 60rpx;"></image>
+        </view>
+      </view>
+    </view>
+	</view>
+  <!-- <template is="prompt" data="{{ prompt }}"/> -->
+</template>

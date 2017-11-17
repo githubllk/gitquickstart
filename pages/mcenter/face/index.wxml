@@ -1,0 +1,4 @@
+<view class="userinfo-left">
+  <image class="userinfo-avatar" src="{{image}}" background-size="cover"></image>
+</view>
+<button class="up-avatar" type='primary' bindtap='updata_avatar'>更换头像</button>

@@ -1,0 +1,22 @@
+/* pages/mcenter/face/index.wxss */
+
+.up-avatar {
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.userinfo-left {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+image{
+  /* display:block; */
+  margin:0 auto
+}
+.userinfo-avatar {
+  width: 500rpx;
+  height: 500rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}

@@ -1,0 +1,6 @@
+/* pages/address/add/index.wxss */
+.weui-eeeeee{
+  display: flex;
+  justify-content: space-between;
+  font-size: 35rpx;
+}

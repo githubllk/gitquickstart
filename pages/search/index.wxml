@@ -1,0 +1,36 @@
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{ inputVal }}" bindinput="inputTyping" maxlength='10' bindconfirm='search' confirm-type='search' auto-focus/>
+      <view class="weui-icon-clear" bindtap="clearInput">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <view class="weui-cells searchbar-result" wx:if="{{ !!inputVal && !!items.length }}">
+  <navigator url="" class="weui-cell" hover-class="weui-cell_active" wx:for="{{ items }}" wx:key="" bindtap="redirectTo" data-keyword="{{ item._id }}">
+    <view class="weui-cell__bd">{{ item._id }}</view>
+    <view class="weui-cell__ft">约 {{ item.num }} 个结果</view>
+  </navigator>
+</view> -->
+
+<view class="weui-panel weui-panel__bd"  wx:if="{{ !!inputVal && !!items.list.length }}">
+  <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" wx:for="{{ items.list }}" wx:key="" bindtap="redirectTo" data-keyword="{{ item.t_id }}">
+    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg" >
+      <image class="weui-media-box__thumb" src="{{item.t_photo}}" />
+    </view>
+    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+      <view class="weui-media-box__title"> {{item.t_title}} </view>
+      <view class="weui-media-box__desc">
+        <text class="text-orangered"> 价格 {{item.t_note}}</text>
+      </view>
+      <!-- <view class="weui-media-box__info">
+        <view class="weui-media-box__info__meta">数量 x1</view>
+        <view class="weui-media-box__info__meta">单价 x2</view>
+      </view> -->
+    </view>
+  </navigator>
+  <view class="weui-cell__ft">约 {{ items.total_num }} 个结果</view>
+</view>

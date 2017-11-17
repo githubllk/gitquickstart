@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/index",
+    "pages/user/index",
+    "pages/logs/logs",
+    "pages/article/article"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00C5C8",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/images/home.png",
+        "selectedIconPath": "assets/images/selecthome.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "客服",
+        "iconPath": "assets/images/tel.png",
+        "selectedIconPath": "assets/images/selecttel.png"
+      },
+      {
+        "pagePath": "pages/mall/mall",
+        "text": "商城",
+        "iconPath": "assets/images/mall.png",
+        "selectedIconPath": "assets/images/selectmall.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "assets/images/buy.png",
+        "selectedIconPath": "assets/images/selectbuy.png"
+      },
+      {
+        "pagePath": "pages/mcenter/mcenter",
+        "text": "我的",
+        "iconPath": "assets/images/me.png",
+        "selectedIconPath": "assets/images/selectme.png"
+      }
+    ]
+  },
+  "debug": {
+    "debug": "true"
+  }
+}

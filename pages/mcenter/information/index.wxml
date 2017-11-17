@@ -1,0 +1,24 @@
+<view class="weui-cells">
+  <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{ items }}" wx:key="" data-path="{{ item.path }}" data-index="{{ index }}" bindtap="navigateTo">
+    <view class="weui-cell__bd">{{ item.text }}</view>
+    <view wx:if='{{!item.cen}}' class="weui-cell__ft_in-access">
+    </view>
+    <view wx:else>
+      <view wx:if="{{index}}">
+        <view bindtap='setphone'>
+          {{item.cen}}
+        </view>
+      </view>
+      <view wx:else>{{item.cen}}</view>
+    </view>
+  </navigator>
+  <navigator class="weui-cell weui-cell_access" data-id="{{name}}" hover-class="weui-cell_active" wx:if="{{setphone}}">
+    <view class="weui-cell__bd">{{name_}}:</view>
+    <form bindsubmit='subphone' data-id="{{name}}">
+      <view class="weui-search-bar">
+        <input name='{{name}}' type="text" password='{{password}}' class="weui-search-bar__input" placeholder="请输入" value='' bindconfirm='search' confirm-type='确定' auto-focus/>
+        <button size='mini' form-type='submit'>确定</button>
+      </view>
+    </form>
+  </navigator>
+</view>

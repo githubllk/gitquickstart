@@ -1,0 +1,7 @@
+/* pages/search/index.wxss */
+.weui-panel{
+  background-color: #ffffff;
+  margin-top: 30rpx;
+  overflow: hidden;
+  position: relative;
+}

@@ -1,0 +1,160 @@
+/* mall.wxss */
+
+page {
+  width: 100%;
+  background: #fff;
+  font-family: "微软雅黑";
+  height: 100%;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+  height: 90rpx;
+  /* border-bottom: 1rpx solid #ccc; */
+  font-size: 30rpx;
+  color: #999;
+}
+
+.item {
+  height: 60rpx;
+  line-height: 90rpx;
+}
+
+.item image {
+  height: 30rpx;
+  width: 30rpx;
+}
+ 
+.text {
+  color: #ccc;
+  padding-left: 30rpx;
+}
+
+.rotateRight {
+  transform: rotate(180deg);
+}
+
+.person_box {
+  position: relative;
+}
+
+.phone_select {
+  margin-top: 0;
+  z-index: 100;
+  position: absolute; /* //小程序中z-index和absolute需要同时存在，元素才能脱离文档。 */
+   width: 100%; 
+}
+
+.select_one {
+  display: flex;
+  justify-content: space-between;
+  height: 90rpx;
+  font-size: 30rpx;
+   color: #999; 
+  line-height: 90rpx;
+  /* border-bottom: 1rpx #ccc solid; */
+  padding-left: 50rpx; 
+ 
+}
+
+.select_one em{
+  color: #ccc;
+  font-size: 40rpx;
+  line-height: 90rpx;
+}
+
+.list{
+  height: 220rpx;
+  width: 100%;
+   display: flex; 
+  /* justify-content: space-around; */
+
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+.x6{
+    /* border-bottom: 1rpx #ccc solid;  */
+  display: flex;
+  width: 50%;
+  padding-top: 20rpx;
+  
+}
+.weui-media-box{
+  padding-right: 6rpx;
+  margin-top: 6rpx;
+}
+/* .img{
+  line-height: 140rpx;
+} */
+.img image{
+  height: 180rpx;
+  width: 180rpx;
+  display: inline-block;
+}
+.right{
+  width: 50%;
+  height: 180rpx;
+  padding-left: 0;
+ 
+}
+.title{
+    display: block;
+    font-size:28rpx;
+    color:#666;
+    /* line-height: 40rpx; */
+    /* height: 120rpx; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.rigth-info{
+  height: 20rpx;
+  margin-top: 0;
+}
+.title-desc{
+  color: #ccc;
+  font-size:27rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+.right-red{
+  color: red;
+}
+.right-grey{
+  color: #ccc;
+  text-decoration: line-through;
+  font-size: 25rpx;
+}
+.mall-cart{
+  height: 110rpx;
+  width: 110rpx;
+  background: #0ae;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  
+}
+.mall-cart-img{
+  position:absolute;
+  width:70rpx;
+  height: 70rpx;
+  display: flex;
+  top:25rpx;
+  left: 20rpx;
+}
+.badge{
+  position: absolute;
+  border-radius: 40%;
+  background: red;
+  height: 40rpx;
+  width: 40rpx;
+  top:12rpx;
+  right: 12rpx;
+  color:#fff;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 25rpx;
+}

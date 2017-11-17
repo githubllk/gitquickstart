@@ -1,0 +1,49 @@
+<import src="../common/filter.wxml" />
+<template is="filter" data="{{...filter}}" />
+<scroll-view scroll-y="true" lower-threshold="50">
+  <view class="scroll-list">
+    <view class="list" wx:for="{{goods}}" wx:key="">
+      <navigator url="" class="x6" hover-class="" bindtap="navigateTo" data-id="1">
+        <view class="img">
+          <image class="" src="../../assets/images/goods_fill1.jpg" />
+        </view>
+        <view class="right">
+          <view class="title">{{item.title}}</view>
+          <view class="title-desc" style="color:#ccc;">{{item.desc}}</view>
+          <view class="right-info">
+            <view class="right-red">¥ 123</view>
+            <view class="right-grey">¥ 123</view>
+          </view>
+        </view>
+      </navigator>
+       <navigator url="" class="x6" hover-class="" bindtap="navigateTo" data-id="1">
+        <view class="img">
+          <image class="" src="../../assets/images/goods_fill1.jpg" />
+        </view>
+        <view class="right">
+          <view class="title">qwqw111111111qw</view>
+          <view class="title-desc" style="color:#ccc;">qwqwqw</view>
+          <view class="right-info">
+            <view class="right-red">¥ 123</view>
+            <view class="right-grey">¥ 123</view>
+          </view>
+        </view>
+      </navigator> 
+    </view>
+    <!-- <view class="list">
+      <navigator url="" class="x6" hover-class="" bindtap="navigateTo" data-id="1">
+        <view class="img">
+          <image class="" src="../../assets/images/goods_fill1.jpg" />
+        </view>
+        <view class="right">
+          <view class="title">qwqwqqqqqqqqqqw</view>
+          <view class="title-desc" style="color:#ccc;">qwqwqw</view>
+          <view class="right-info">
+            <view class="right-red">¥ 123</view>
+            <view class="right-grey">¥ 123</view>
+          </view>
+        </view>
+      </navigator>
+    </view> -->
+  </view>
+</scroll-view>

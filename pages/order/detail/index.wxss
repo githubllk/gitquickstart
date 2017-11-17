@@ -1,0 +1,9 @@
+/* pages/order/detail/index.wxss */
+/* .weui-form-preview__label{
+  width: 60%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  text-align-last:auto;
+} */

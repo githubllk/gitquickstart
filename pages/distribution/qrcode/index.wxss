@@ -1,0 +1,5 @@
+/* pages/distribution/qrcode/index.wxss */
+image{
+  width: 320px;
+  height: 320px;
+}

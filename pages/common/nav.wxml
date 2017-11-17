@@ -1,0 +1,51 @@
+<template name="nav">
+    <view class="weui-flex topbar">
+       <!-- <block wx:for="{{ navList }}" wx:key="">  -->
+          <!-- <view data-id="1" data-index="{{ index }}" class="weui-flex__item" catchtap="onTapTag"> -->
+          <view data-id="1" data-index="{{ index }}" class="weui-flex__item" catchtap="onTapTag">
+        	<view class="topbar-item0">制造业</view>
+           </view>
+          <view data-id="2" data-index="{{ index }}" class="weui-flex__item" catchtap="onTapTag">
+        	<view class="topbar-item1">服务业</view>
+          </view>
+          <view data-id="3" data-index="{{ index }}" class="weui-flex__item" catchtap="onTapTag">
+        	<view class="topbar-item2">货易货</view>
+          </view>
+          <view data-id="4" data-index="{{ index }}" class="weui-flex__item" catchtap="onTapTag">
+        	<view class="topbar-item3">商城</view> 
+        </view>
+       <!-- </block>  -->
+    </view>
+    <view class="blank-10"></view>
+    <view class="entry-list clearfix">
+          <view class="entry i"><image src="../../assets/images/i1.png"></image>
+              <view class="entry f">品牌坊</view>
+          </view>
+          <view class="entry i"><image src="../../assets/images/i2.png"></image>
+              <view class="entry f">百诺坊</view>
+          </view>
+          <view class="entry i"><image src="../../assets/images/i3.png"></image>
+              <view class="entry f">我秀坊</view>
+          </view>
+          <view class="entry i"><image src="../../assets/images/i4.png"></image>
+              <view class="entry f">拍卖坊</view>
+          </view>
+          <view class="entry i"><image src="../../assets/images/i5.png"></image>
+              <view class="entry f">活动坊</view>
+          </view>
+    </view>
+    <view class="new-c">
+        <view class="new-r ll">最新文章</view>
+        <view class="new-r r">
+           <!-- 22222 -->
+             <swiper class='swtext' vertical="true" indicator-dots="{{ indicatorDots }}" autoplay="true" current="{{ current }}" interval="2000" duration="0" circular="{{ circular }}" >
+                <swiper-item  bindtap="newfunTo" id="{{item.article_id}}" data-new="323" wx:for="{{news}}" wx:key="">
+                    {{item.title}}
+                </swiper-item>
+                <!-- <swiper-item>
+                    22222222222
+                </swiper-item> -->
+            </swiper> 
+        </view>
+    </view>
+</template>

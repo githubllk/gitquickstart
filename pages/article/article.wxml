@@ -1,0 +1,38 @@
+<!--article.wxml-->
+<view class="detail">
+  <view class="tit">{{data.news.title}}</view>
+  <view class="detail-des"> 发布日期：{{data.news.create_time}} 总浏览：{{data.news.views}}</view>
+  <view class="detail-read">
+    <text decode='true'>
+  {{data.news.details}}
+  </text>
+  </view>
+  <view class="blank-10"></view>
+  <view class="container">
+    <button class="red" size="default"> 赞（{{data.news.zan}}）</button>
+    <button class="blue"> 打赏（0）</button>
+  </view>
+  <view class="blank-10"></view>
+  <view class="sec-title">
+    <i style="color:#D43C33;font-weight:bold;padding-right:20rpx;font-size:30rpx">|</i> 推荐文章
+  </view>
+  <view class="blank-10"></view>
+  <view wx:for="{{data.rands}}" wx:key="">
+
+    <view class="sec-acticle" bindtap='article_bind' data-id='{{item.article_id}}'>
+      <image  binderror="imgerr" data-errorimg="{{index}}" src='{{item.photo}}'></image>
+      <view class='l1'>
+        <text class='title_1'>{{item.title}}</text>
+        <view>
+          <image  src='../../assets/images/liuyan.png'></image>
+          <text decode='true'>&nbsp;{{item.views}}&nbsp;</text>
+          <image src='../../assets/images/shijian.png'></image>
+          <text decode='true'>&nbsp;{{item.create_time}}</text>
+        </view>
+      </view>
+    </view>
+    
+
+  </view>
+
+</view>

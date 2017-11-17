@@ -1,0 +1,18 @@
+<import src="../../common/prompt.wxml" />
+<template is="prompt" data="{{ prompt }}" />
+<view class='line' >
+  <view class='line-o'>
+    <view>ID：{{list.user_id}}</view>
+    <view>注册时间：{{list.reg_time}}</view>
+  </view>
+  <view class='line-c'>
+    <view>
+      账户：{{list.account}}
+    </view>
+    <view>
+      昵称：{{list.nickname}}
+    </view>
+  </view>
+  <view class='blank-10'></view>
+  <view class='blank-10'></view>
+</view>

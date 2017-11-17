@@ -1,0 +1,3 @@
+<template name="deile">
+<web-view src="http://ceshi.zd360.com/"></web-view>
+</template>

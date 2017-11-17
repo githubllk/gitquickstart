@@ -1,0 +1,32 @@
+<import src="../../common/nav1.wxml"/>
+<import src="../../common/prompt.wxml"/>
+
+<template is="nav" data="{{ navList, activeIndex }}"/>
+
+
+<view class="scroll-list">
+    <view class="weui-form-preview" wx:if="{{ !!order.total }}" wx:for="{{ order.items }}" wx:key="" bindtap="navigateTo" data-id="{{ item.order_id }}">
+        <view class="weui-form-preview__hd">
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">订单总价</view>
+                <view class="weui-form-preview__value_in-hd">¥ {{ item.total_price }}</view>
+            </view>
+        </view>
+        <view class="weui-form-preview__bd">
+            <view class="weui-form-preview__item" wx:if="{{ item.order_list }}" wx:for="{{ item.order_list }}" wx:for-item="l" wx:key="">
+                <view class="weui-form-preview__label">{{ l.title }}</view> 
+                <view class="weui-form-preview__value">
+                {{ l.price }}x{{ l.num }} <text wx:if="{{l.total_express}}">+{{l.total_express}}</text>¥ {{ l.total_price }}</view>
+            </view>
+        </view>
+        <view class="weui-form-preview__ft">
+            <navigator class="weui-form-preview__btn weui-form-preview__btn_default" hover-class="weui-form-preview__btn_active">联系商家</navigator>
+            <navigator class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" catchtap='aready_jump' url='' data-order_id="{{ item.order_id }}">
+             <text wx:if="{{ id == 'aready/1'}}">去付款</text>
+             <text wx:elif="{{ id == 'aready/2'}}">再来一单</text>
+             <text wx:else>再来一单</text>
+             </navigator>
+        </view>
+    </view>
+    <template is="prompt" data="{{ prompt }}"/>
+</view>

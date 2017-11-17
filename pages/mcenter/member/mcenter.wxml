@@ -1,0 +1,74 @@
+<!--mcenter.wxml-->
+<view class="container">
+	<view  bindtap="bindViewTap" class="userinfo">
+    <view class="userinfo-left">
+      <image class="userinfo-avatar" src="{{ member.face }}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{ userInfo.nickName }}</text>
+    </view>
+		<view class="userinfo-right"> 
+        <text>原始股份：{{member.hongli}} \n</text>
+        <text>红利股份：{{member.guquan}}</text>
+    </view>
+	</view>
+  <view class="member-collect" style="background-image: url('{{fileBasePath}}/static/default/wap/image/mcenter/member_top.png')">
+      <view class="classname">
+        <view class="member-collect-t">{{member.money}}</view>
+        <view class="member-collect-t">数字资产</view>
+      </view>
+      <view class="classname">
+        <view class="member-collect-t">{{member.integral}}</view>
+        <view class="member-collect-t">增值资产(申请股权)</view>
+      </view>
+      <view class="classname">
+        <view class="member-collect-t">{{member.chengxin}}</view>
+        <view class="member-collect-t">诚信指数</view>
+      </view>
+  </view>
+  <view class="mt5">
+      <view bindtap='to_order' data-type='qianggou'>
+        <view class="mt5-collect-t"><image src="{{imgurl}}1mt5.png"></image></view>
+        <view class="member-collect-t">抢购</view>
+      </view>
+      <view bindtap='to_order' data-type='goods'>
+        <view class="mt5-collect-t"><image src="{{imgurl}}2mt5.png"></image></view>
+        <view class="mt5-collect-t" >购物</view>
+      </view>
+      <view bindtap='to_order' data-type='waimai'>
+        <view class="mt5-collect-t"><image src="{{imgurl}}3mt5.png"></image></view>
+        <view class="mt5-collect-t">外卖</view>
+      </view>
+       <view bindtap='to_order' data-type='dingzuo'>
+        <view class="mt5-collect-t"><image src="{{imgurl}}4mt5.png"></image></view>
+        <view class="mt5-collect-t">订座</view>
+      </view>
+       <view bindtap='to_order' data-type='maidan'>
+        <view class="mt5-collect-t"><image src="{{imgurl}}5mt5.png"></image></view>
+        <view class="mt5-collect-t">买单</view>
+      </view>
+  </view>
+	<view class="info_list">
+		<view class="weui-cells">
+			 <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{ items }}" wx:key="" data-path="{{ item.path }}" data-index="{{ index }}" bindtap="navigateTo"> <!--bindtap="navigateTo"-->
+                <view class="weui-cell__hd">
+                    <image src="{{ item.icon }}" style="margin-bottom: 2px;margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">{{ item.text }}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">
+                
+                </view>
+            </navigator>
+        </view>
+        <view class="weui-cells">
+            <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{ settings }}" wx:key="" data-path="{{ item.path }}" data-index="{{ index }}" bindtap="bindtap">
+                <view class="weui-cell__hd">
+                    <image src="{{ item.icon }}" style="margin-bottom: 2px;margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">{{ item.text }}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">
+                    <text wx:if="{{ index === 0 }}">{{ item.path }}</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
+    <!-- <view class="logout" bindtap="logout">登出账号</view> -->
+</view>

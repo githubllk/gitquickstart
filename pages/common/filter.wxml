@@ -1,0 +1,63 @@
+<template name="filter">
+  <view class="filter">
+  <view class="item" bindtap="clickPerson" data-ta="1">选择分类
+    <image src="{{imgurl}}/bottom.png" class="bott {{selectArea1 ? 'rotateRight' :''}}"></image>
+    <text class="text" style="color:#999;">|</text>
+  </view>
+  <view class="item" bindtap="clickPerson" data-ta="2">选择地区
+    <image src="{{imgurl}}/bottom.png" class="bott {{selectArea2 ? 'rotateRight' :''}}"></image>
+    <text class="text" style="color:#999;">|</text>
+  </view>
+  <view class="item" bindtap="clickPerson" data-ta="3">选择排序
+    <image src="{{imgurl}}/bottom.png" class="bott {{selectArea3 ? 'rotateRight' :''}}"></image>
+  </view>
+</view>
+<view class="person_box">
+  <view class="phone_select" hidden="{{selectPerson1}}">
+    <view class="select_one" bindtap="mySelect" data-me="你好1">
+      你好1
+      <em>></em>
+    </view>
+    <view class="select_one" bindtap="mySelect" data-me="他好">
+      你好
+      <em>></em>
+    </view>
+    <view class="select_one" bindtap="mySelect" data-me="大家好">
+      你好
+      <em>></em>
+    </view>
+  </view>
+</view>
+<view class="person_box">
+  <view class="phone_select" hidden="{{selectPerson2}}">
+    <view class="select_one" bindtap="mySelect" data-me="你好2">
+      你好2
+      <em>></em>
+    </view>
+    <view class="select_one" bindtap="mySelect" data-me="他好">
+      你好
+      <em>></em>
+    </view>
+    <view class="select_one" bindtap="mySelect" data-me="大家好">
+      你好
+      <em>></em>
+    </view>
+  </view>
+</view>
+<view class="person_box">
+  <view class="phone_select" hidden="{{selectPerson3}}">
+    <view class="select_one" bindtap="mySelect" data-me="你好3">
+      你好3
+      <em>></em>
+    </view>
+    <view class="select_one" bindtap="mySelect" data-me="他好">
+      你好
+      <em>></em>
+    </view>
+    <view class="select_one" bindtap="mySelect" data-me="大家好">
+      你好
+      <em>></em>
+    </view>
+  </view>
+</view>
+</template>

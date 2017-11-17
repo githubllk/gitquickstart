@@ -1,0 +1,40 @@
+<!--mcenter.wxml-->
+<view class="container">
+	<view  bindtap="bindViewTap" class="userinfo">
+    <view class="userinfo-left">
+      <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{ userInfo.nickName }}</text>
+    </view>
+		<view class="userinfo-right"> 
+        <text>原始股份：{{member.member.hongli}} \n</text>
+        <text>红利股份：{{member.member.guquan}}</text>
+    </view>
+	</view>
+  <view class="member-collect" style="background-image: url('{{fileBasePath}}/static/default/wap/image/mcenter/member_top.png')">
+      <view class="classname">
+        <view class="member-collect-t">{{member.member.money/100}}</view>
+        <view class="member-collect-t">我的余额</view>
+      </view>
+      <view class="classname">
+        <view class="member-collect-t">{{member.profit_ok/100}}</view>
+        <view class="member-collect-t">我的分成</view>
+      </view>
+      <view class="classname">
+        <view class="member-collect-t">{{member.profit_cancel/100}}</view>
+        <view class="member-collect-t">已取消分成</view>
+      </view>
+  </view>
+	<view class="info_list">
+		<view class="weui-cells">
+			 <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{ items }}" wx:key="" data-path="{{ item.path }}" data-index="{{ index }}" bindtap="navigateTo"> <!--bindtap="navigateTo"-->
+                <view class="weui-cell__hd">
+                    <image src="{{ item.icon }}" style="margin-bottom: 2px;margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">{{ item.text }}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">
+                
+                </view>
+            </navigator>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/start/index",
+    "pages/index/index",
+    "pages/login/index",
+    "pages/user/index",
+    "pages/logs/logs",
+    "pages/search/index",
+    "pages/article/article",
+    "pages/mcenter/member/mcenter",
+    "pages/call/call",
+    "pages/mall/mall",
+    "pages/cart/cart",
+    "pages/order/confirm/confirm",
+    "pages/order/aconfirm/confirm",
+    "pages/order/detail/index",
+    "pages/order/list/index",
+    "pages/address/list/index",
+    "pages/address/add/index",
+    "pages/address/confirm/index",
+    "pages/address/edit/index",
+    "pages/goods/deile/deile",
+    "pages/web/index",
+    "pages/distribution/distribution/index",
+    "pages/distribution/qrcode/index",
+    "pages/distribution/profit/index",
+    "pages/distribution/subordinate/index",
+    "pages/distribution/superior/index",
+    "pages/mcenter/information/index",
+    "pages/mcenter/face/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00C5C8",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/images/home.png",
+        "selectedIconPath": "assets/images/selecthome.png"
+      },
+      {
+        "pagePath": "pages/call/call",
+        "text": "客服",
+        "iconPath": "assets/images/tel.png",
+        "selectedIconPath": "assets/images/selecttel.png"
+      },
+      {
+        "pagePath": "pages/mall/mall",
+        "text": "商城",
+        "iconPath": "assets/images/mall.png",
+        "selectedIconPath": "assets/images/selectmall.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "assets/images/buy.png",
+        "selectedIconPath": "assets/images/selectbuy.png"
+      },
+      {
+        "pagePath": "pages/mcenter/member/mcenter",
+        "text": "我的",
+        "iconPath": "assets/images/me.png",
+        "selectedIconPath": "assets/images/selectme.png"
+      }
+    ]
+  },
+  "debug": {
+    "debug": "true"
+  }
+}
