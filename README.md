@@ -230,7 +230,7 @@ Page({
 		}
 	},
 })
-
+```
 ## 感谢:
 
 感谢开源作者：[m-mall](https://github.com/skyvow/m-mall)
